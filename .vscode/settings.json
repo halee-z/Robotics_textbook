@@ -1,0 +1,9 @@
+{
+    "contentGenerator.timeout": 300000,
+"contentGenerator.streaming": false,
+"files.participants.timeout": 135000,
+"cursorpyright.analysis.fileEnumerationTimeout": 300000,
+"dotnetAcquisitionExtension.installTimeoutValue": 300000,
+"thunder-client.contentType": true
+
+}

@@ -1,0 +1,20 @@
+name: educational-ai-humanoid-platform
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.8
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - jupyter
+  - pip:
+    - -r requirements.txt
