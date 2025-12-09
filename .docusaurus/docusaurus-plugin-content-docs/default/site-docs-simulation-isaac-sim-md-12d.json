@@ -1,0 +1,27 @@
+{
+  "id": "simulation/isaac-sim",
+  "title": "Isaac Sim for Advanced Humanoid Robotics",
+  "description": "Overview",
+  "source": "@site/docs/simulation/isaac-sim.md",
+  "sourceDirName": "simulation",
+  "slug": "/simulation/isaac-sim",
+  "permalink": "/docs/simulation/isaac-sim",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/isaac-sim.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Simulation Environments for Humanoid Robotics",
+    "permalink": "/docs/simulation/gazebo"
+  },
+  "next": {
+    "title": "Unity Robotics Simulation for Humanoid Applications",
+    "permalink": "/docs/simulation/unity-robotics"
+  }
+}

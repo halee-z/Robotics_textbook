@@ -1,0 +1,18 @@
+{
+  "id": "api/overview",
+  "title": "API Documentation",
+  "description": "The Educational AI & Humanoid Robotics Platform provides a comprehensive API for interacting with educational content, robotics systems, and AI agents. This documentation covers all available endpoints and their usage.",
+  "source": "@site/docs/api/overview.md",
+  "sourceDirName": "api",
+  "slug": "/api/overview",
+  "permalink": "/docs/api/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/api/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  }
+}

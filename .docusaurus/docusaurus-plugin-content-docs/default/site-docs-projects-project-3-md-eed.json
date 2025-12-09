@@ -1,0 +1,23 @@
+{
+  "id": "projects/project3",
+  "title": "Project 3: Socially Assistive Robot for Elderly Care",
+  "description": "Overview",
+  "source": "@site/docs/projects/project3.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/project3",
+  "permalink": "/docs/projects/project3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/projects/project3.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started with Projects",
+    "permalink": "/docs/projects/project2"
+  }
+}

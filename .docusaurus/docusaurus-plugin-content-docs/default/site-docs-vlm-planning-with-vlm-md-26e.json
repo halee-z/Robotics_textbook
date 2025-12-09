@@ -1,0 +1,27 @@
+{
+  "id": "vlm/planning-with-vlm",
+  "title": "Planning with Vision-Language Models in Robotics",
+  "description": "Overview",
+  "source": "@site/docs/vlm/planning-with-vlm.md",
+  "sourceDirName": "vlm",
+  "slug": "/vlm/planning-with-vlm",
+  "permalink": "/docs/vlm/planning-with-vlm",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/vlm/planning-with-vlm.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Embedding Techniques for Robotics Applications",
+    "permalink": "/docs/vlm/embedding-techniques"
+  },
+  "next": {
+    "title": "Simulation Environments for Humanoid Robotics",
+    "permalink": "/docs/simulation/gazebo"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "exercises/chapter2",
+  "title": "Chapter 2 Exercises: ROS 2 for Humanoid Robotics",
+  "description": "Exercise 1: ROS 2 Node Development for Robot Control",
+  "source": "@site/docs/exercises/chapter2.md",
+  "sourceDirName": "exercises",
+  "slug": "/exercises/chapter2",
+  "permalink": "/docs/exercises/chapter2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/exercises/chapter2.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1 Exercises: Introduction to Humanoid Robotics",
+    "permalink": "/docs/exercises/chapter1"
+  },
+  "next": {
+    "title": "Chapter 3 Exercises: Vision-Language Models in Robotics",
+    "permalink": "/docs/exercises/chapter3"
+  }
+}

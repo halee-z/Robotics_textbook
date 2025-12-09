@@ -1,0 +1,27 @@
+{
+  "id": "projects/project2",
+  "title": "Getting Started with Projects",
+  "description": "Overview",
+  "source": "@site/docs/projects/project2.md",
+  "sourceDirName": "projects",
+  "slug": "/projects/project2",
+  "permalink": "/docs/projects/project2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/projects/project2.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Project 1: Design and Simulate a Simple Humanoid Walker",
+    "permalink": "/docs/projects/project1"
+  },
+  "next": {
+    "title": "Project 3: Socially Assistive Robot for Elderly Care",
+    "permalink": "/docs/projects/project3"
+  }
+}

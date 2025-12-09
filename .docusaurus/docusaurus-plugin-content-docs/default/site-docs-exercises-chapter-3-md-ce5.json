@@ -1,0 +1,27 @@
+{
+  "id": "exercises/chapter3",
+  "title": "Chapter 3 Exercises: Vision-Language Models in Robotics",
+  "description": "Exercise 1: Implementing CLIP for Robot Perception",
+  "source": "@site/docs/exercises/chapter3.md",
+  "sourceDirName": "exercises",
+  "slug": "/exercises/chapter3",
+  "permalink": "/docs/exercises/chapter3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/exercises/chapter3.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2 Exercises: ROS 2 for Humanoid Robotics",
+    "permalink": "/docs/exercises/chapter2"
+  },
+  "next": {
+    "title": "Project 1: Design and Simulate a Simple Humanoid Walker",
+    "permalink": "/docs/projects/project1"
+  }
+}

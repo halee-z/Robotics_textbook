@@ -1,0 +1,27 @@
+{
+  "id": "vlm/introduction",
+  "title": "Vision-Language Models in Robotics",
+  "description": "Overview",
+  "source": "@site/docs/vlm/introduction.md",
+  "sourceDirName": "vlm",
+  "slug": "/vlm/introduction",
+  "permalink": "/docs/vlm/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/vlm/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ROS 2 Packages and Workspaces for Humanoid Robotics",
+    "permalink": "/docs/ros/packages-workspaces"
+  },
+  "next": {
+    "title": "Vision-Language Model Architectures for Robotics",
+    "permalink": "/docs/vlm/vla-architectures"
+  }
+}

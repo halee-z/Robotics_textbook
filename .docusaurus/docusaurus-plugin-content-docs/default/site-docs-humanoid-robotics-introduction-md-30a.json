@@ -1,0 +1,27 @@
+{
+  "id": "humanoid-robotics/introduction",
+  "title": "Humanoid Robotics: Kinematics, Dynamics, and Control",
+  "description": "Overview",
+  "source": "@site/docs/humanoid-robotics/introduction.md",
+  "sourceDirName": "humanoid-robotics",
+  "slug": "/humanoid-robotics/introduction",
+  "permalink": "/docs/humanoid-robotics/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics/introduction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Unity Robotics Simulation for Humanoid Applications",
+    "permalink": "/docs/simulation/unity-robotics"
+  },
+  "next": {
+    "title": "Humanoid Robot Kinematics: Structure and Motion",
+    "permalink": "/docs/humanoid-robotics/kinematics"
+  }
+}

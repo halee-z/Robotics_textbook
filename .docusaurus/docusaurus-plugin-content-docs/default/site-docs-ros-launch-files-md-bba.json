@@ -1,0 +1,27 @@
+{
+  "id": "ros/launch-files",
+  "title": "ROS 2 Launch Files and Workspaces for Humanoid Robotics",
+  "description": "Overview",
+  "source": "@site/docs/ros/launch-files.md",
+  "sourceDirName": "ros",
+  "slug": "/ros/launch-files",
+  "permalink": "/docs/ros/launch-files",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/ros/launch-files.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nodes, Topics, and Services in ROS 2",
+    "permalink": "/docs/ros/nodes-topics-services"
+  },
+  "next": {
+    "title": "ROS 2 Packages and Workspaces for Humanoid Robotics",
+    "permalink": "/docs/ros/packages-workspaces"
+  }
+}

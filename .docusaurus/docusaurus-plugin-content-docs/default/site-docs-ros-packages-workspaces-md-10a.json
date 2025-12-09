@@ -1,0 +1,27 @@
+{
+  "id": "ros/packages-workspaces",
+  "title": "ROS 2 Packages and Workspaces for Humanoid Robotics",
+  "description": "Package Organization for Humanoid Robots",
+  "source": "@site/docs/ros/packages-workspaces.md",
+  "sourceDirName": "ros",
+  "slug": "/ros/packages-workspaces",
+  "permalink": "/docs/ros/packages-workspaces",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/ros/packages-workspaces.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ROS 2 Launch Files and Workspaces for Humanoid Robotics",
+    "permalink": "/docs/ros/launch-files"
+  },
+  "next": {
+    "title": "Vision-Language Models in Robotics",
+    "permalink": "/docs/vlm/introduction"
+  }
+}

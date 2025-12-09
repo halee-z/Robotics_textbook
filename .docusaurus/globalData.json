@@ -1,0 +1,151 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "api/overview",
+              "path": "/docs/api/overview"
+            },
+            {
+              "id": "exercises/chapter1",
+              "path": "/docs/exercises/chapter1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "exercises/chapter2",
+              "path": "/docs/exercises/chapter2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "exercises/chapter3",
+              "path": "/docs/exercises/chapter3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics/control-systems",
+              "path": "/docs/humanoid-robotics/control-systems",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics/human-robot-interaction",
+              "path": "/docs/humanoid-robotics/human-robot-interaction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics/introduction",
+              "path": "/docs/humanoid-robotics/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics/kinematics",
+              "path": "/docs/humanoid-robotics/kinematics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "humanoid-robotics/walking-algorithms",
+              "path": "/docs/humanoid-robotics/walking-algorithms",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro/getting-started",
+              "path": "/docs/intro/getting-started"
+            },
+            {
+              "id": "projects/project1",
+              "path": "/docs/projects/project1",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "projects/project2",
+              "path": "/docs/projects/project2",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "projects/project3",
+              "path": "/docs/projects/project3",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros/fundamentals",
+              "path": "/docs/ros/fundamentals",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros/launch-files",
+              "path": "/docs/ros/launch-files",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros/nodes-topics-services",
+              "path": "/docs/ros/nodes-topics-services",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ros/packages-workspaces",
+              "path": "/docs/ros/packages-workspaces",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "simulation/gazebo",
+              "path": "/docs/simulation/gazebo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "simulation/isaac-sim",
+              "path": "/docs/simulation/isaac-sim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "simulation/unity-robotics",
+              "path": "/docs/simulation/unity-robotics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vlm/embedding-techniques",
+              "path": "/docs/vlm/embedding-techniques",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vlm/introduction",
+              "path": "/docs/vlm/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vlm/planning-with-vlm",
+              "path": "/docs/vlm/planning-with-vlm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "vlm/vla-architectures",
+              "path": "/docs/vlm/vla-architectures",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

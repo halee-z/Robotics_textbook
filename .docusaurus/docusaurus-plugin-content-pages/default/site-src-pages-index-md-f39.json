@@ -1,0 +1,11 @@
+{
+  "type": "mdx",
+  "permalink": "/",
+  "source": "@site/src/pages/index.md",
+  "title": "Educational AI & Humanoid Robotics",
+  "description": "Welcome to the Educational AI & Humanoid Robotics textbook - an AI-Native resource for Advanced Robotics Education.",
+  "frontMatter": {
+    "title": "Educational AI & Humanoid Robotics"
+  },
+  "unlisted": false
+}

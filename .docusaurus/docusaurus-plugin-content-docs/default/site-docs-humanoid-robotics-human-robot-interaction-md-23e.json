@@ -1,0 +1,27 @@
+{
+  "id": "humanoid-robotics/human-robot-interaction",
+  "title": "Human-Robot Interaction for Social Robotics",
+  "description": "Overview",
+  "source": "@site/docs/humanoid-robotics/human-robot-interaction.md",
+  "sourceDirName": "humanoid-robotics",
+  "slug": "/humanoid-robotics/human-robot-interaction",
+  "permalink": "/docs/humanoid-robotics/human-robot-interaction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics/human-robot-interaction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Humanoid Robot Walking Algorithms and Gait Generation",
+    "permalink": "/docs/humanoid-robotics/walking-algorithms"
+  },
+  "next": {
+    "title": "Chapter 1 Exercises: Introduction to Humanoid Robotics",
+    "permalink": "/docs/exercises/chapter1"
+  }
+}

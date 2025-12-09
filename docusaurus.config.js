@@ -8,9 +8,9 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
   title: 'Educational AI & Humanoid Robotics',
   tagline: 'AI-Native Textbook for Advanced Robotics Education',
-  url: 'https://educational-ai-hri.github.io',
-  baseUrl: '/educational-ai-humanoid-robotics/',
-  onBrokenLinks: 'throw',
+  url: 'http://localhost:3000',
+  baseUrl: '/',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 

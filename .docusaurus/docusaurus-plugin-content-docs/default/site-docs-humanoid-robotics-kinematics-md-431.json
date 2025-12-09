@@ -1,0 +1,27 @@
+{
+  "id": "humanoid-robotics/kinematics",
+  "title": "Humanoid Robot Kinematics: Structure and Motion",
+  "description": "Overview",
+  "source": "@site/docs/humanoid-robotics/kinematics.md",
+  "sourceDirName": "humanoid-robotics",
+  "slug": "/humanoid-robotics/kinematics",
+  "permalink": "/docs/humanoid-robotics/kinematics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics/kinematics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Humanoid Robotics: Kinematics, Dynamics, and Control",
+    "permalink": "/docs/humanoid-robotics/introduction"
+  },
+  "next": {
+    "title": "Control Systems for Humanoid Robots",
+    "permalink": "/docs/humanoid-robotics/control-systems"
+  }
+}

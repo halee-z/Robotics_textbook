@@ -1,0 +1,27 @@
+{
+  "id": "humanoid-robotics/control-systems",
+  "title": "Control Systems for Humanoid Robots",
+  "description": "Overview",
+  "source": "@site/docs/humanoid-robotics/control-systems.md",
+  "sourceDirName": "humanoid-robotics",
+  "slug": "/humanoid-robotics/control-systems",
+  "permalink": "/docs/humanoid-robotics/control-systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics/control-systems.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Humanoid Robot Kinematics: Structure and Motion",
+    "permalink": "/docs/humanoid-robotics/kinematics"
+  },
+  "next": {
+    "title": "Humanoid Robot Walking Algorithms and Gait Generation",
+    "permalink": "/docs/humanoid-robotics/walking-algorithms"
+  }
+}

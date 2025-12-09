@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Educational AI & Humanoid Robotics: Complete Course",
+  "description": "Course Overview",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "ROS 2 Fundamentals for Humanoid Robotics",
+    "permalink": "/docs/ros/fundamentals"
+  }
+}

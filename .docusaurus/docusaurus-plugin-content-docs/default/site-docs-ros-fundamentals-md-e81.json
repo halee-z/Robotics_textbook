@@ -1,0 +1,27 @@
+{
+  "id": "ros/fundamentals",
+  "title": "ROS 2 Fundamentals for Humanoid Robotics",
+  "description": "Overview",
+  "source": "@site/docs/ros/fundamentals.md",
+  "sourceDirName": "ros",
+  "slug": "/ros/fundamentals",
+  "permalink": "/docs/ros/fundamentals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/ros/fundamentals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Educational AI & Humanoid Robotics: Complete Course",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Nodes, Topics, and Services in ROS 2",
+    "permalink": "/docs/ros/nodes-topics-services"
+  }
+}

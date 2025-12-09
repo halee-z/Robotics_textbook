@@ -1,0 +1,27 @@
+{
+  "id": "simulation/unity-robotics",
+  "title": "Unity Robotics Simulation for Humanoid Applications",
+  "description": "Overview",
+  "source": "@site/docs/simulation/unity-robotics.md",
+  "sourceDirName": "simulation",
+  "slug": "/simulation/unity-robotics",
+  "permalink": "/docs/simulation/unity-robotics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/unity-robotics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Isaac Sim for Advanced Humanoid Robotics",
+    "permalink": "/docs/simulation/isaac-sim"
+  },
+  "next": {
+    "title": "Humanoid Robotics: Kinematics, Dynamics, and Control",
+    "permalink": "/docs/humanoid-robotics/introduction"
+  }
+}

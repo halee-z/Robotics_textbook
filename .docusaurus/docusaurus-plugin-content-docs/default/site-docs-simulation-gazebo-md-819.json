@@ -1,0 +1,27 @@
+{
+  "id": "simulation/gazebo",
+  "title": "Simulation Environments for Humanoid Robotics",
+  "description": "Overview",
+  "source": "@site/docs/simulation/gazebo.md",
+  "sourceDirName": "simulation",
+  "slug": "/simulation/gazebo",
+  "permalink": "/docs/simulation/gazebo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/simulation/gazebo.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Planning with Vision-Language Models in Robotics",
+    "permalink": "/docs/vlm/planning-with-vlm"
+  },
+  "next": {
+    "title": "Isaac Sim for Advanced Humanoid Robotics",
+    "permalink": "/docs/simulation/isaac-sim"
+  }
+}

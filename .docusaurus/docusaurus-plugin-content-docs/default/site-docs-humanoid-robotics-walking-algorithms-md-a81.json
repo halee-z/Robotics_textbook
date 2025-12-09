@@ -1,0 +1,27 @@
+{
+  "id": "humanoid-robotics/walking-algorithms",
+  "title": "Humanoid Robot Walking Algorithms and Gait Generation",
+  "description": "Overview",
+  "source": "@site/docs/humanoid-robotics/walking-algorithms.md",
+  "sourceDirName": "humanoid-robotics",
+  "slug": "/humanoid-robotics/walking-algorithms",
+  "permalink": "/docs/humanoid-robotics/walking-algorithms",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/humanoid-robotics/walking-algorithms.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Control Systems for Humanoid Robots",
+    "permalink": "/docs/humanoid-robotics/control-systems"
+  },
+  "next": {
+    "title": "Human-Robot Interaction for Social Robotics",
+    "permalink": "/docs/humanoid-robotics/human-robot-interaction"
+  }
+}

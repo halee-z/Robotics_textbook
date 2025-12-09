@@ -1,0 +1,27 @@
+{
+  "id": "vlm/vla-architectures",
+  "title": "Vision-Language Model Architectures for Robotics",
+  "description": "Overview",
+  "source": "@site/docs/vlm/vla-architectures.md",
+  "sourceDirName": "vlm",
+  "slug": "/vlm/vla-architectures",
+  "permalink": "/docs/vlm/vla-architectures",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/vlm/vla-architectures.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vision-Language Models in Robotics",
+    "permalink": "/docs/vlm/introduction"
+  },
+  "next": {
+    "title": "Embedding Techniques for Robotics Applications",
+    "permalink": "/docs/vlm/embedding-techniques"
+  }
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-exercises/chapter2" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Chapter 2 Exercises: ROS 2 for Humanoid Robotics | Educational AI &amp; Humanoid Robotics</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/img/social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/img/social-card.jpg"><meta data-rh="true" property="og:url" content="https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/docs/exercises/chapter2"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Chapter 2 Exercises: ROS 2 for Humanoid Robotics | Educational AI &amp; Humanoid Robotics"><meta data-rh="true" name="description" content="Exercise 1: ROS 2 Node Development for Robot Control"><meta data-rh="true" property="og:description" content="Exercise 1: ROS 2 Node Development for Robot Control"><link data-rh="true" rel="icon" href="/educational-ai-humanoid-robotics/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/docs/exercises/chapter2"><link data-rh="true" rel="alternate" href="https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/docs/exercises/chapter2" hreflang="en"><link data-rh="true" rel="alternate" href="https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/docs/exercises/chapter2" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Chapter 2 Exercises: ROS 2 for Humanoid Robotics","item":"https://educational-ai-hri.github.io/educational-ai-humanoid-robotics/docs/exercises/chapter2"}]}</script><link rel="stylesheet" href="/educational-ai-humanoid-robotics/assets/css/styles.a038b6a8.css">
+<script src="/educational-ai-humanoid-robotics/assets/js/runtime~main.c14dd43b.js" defer="defer"></script>
+<script src="/educational-ai-humanoid-robotics/assets/js/main.b3620a02.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/educational-ai-humanoid-robotics/"><div class="navbar__logo"><img src="/educational-ai-humanoid-robotics/img/logo.svg" alt="Robotics Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/educational-ai-humanoid-robotics/img/logo.svg" alt="Robotics Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">AI &amp; Humanoid Robotics Textbook</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/educational-ai-humanoid-robotics/docs/intro">Textbook</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/educational-ai-humanoid-robotics/docs/intro"><span title="Educational AI &amp; Humanoid Robotics: Complete Course" class="linkLabel_WmDU">Educational AI &amp; Humanoid Robotics: Complete Course</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/educational-ai-humanoid-robotics/docs/ros/fundamentals"><span title="ROS 2 Fundamentals" class="categoryLinkLabel_W154">ROS 2 Fundamentals</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/educational-ai-humanoid-robotics/docs/vlm/introduction"><span title="Vision-Language Models in Robotics" class="categoryLinkLabel_W154">Vision-Language Models in Robotics</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/educational-ai-humanoid-robotics/docs/simulation/gazebo"><span title="Simulation Environments" class="categoryLinkLabel_W154">Simulation Environments</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/educational-ai-humanoid-robotics/docs/humanoid-robotics/introduction"><span title="Humanoid Robotics" class="categoryLinkLabel_W154">Humanoid Robotics</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/educational-ai-humanoid-robotics/docs/exercises/chapter1"><span title="Exercises" class="categoryLinkLabel_W154">Exercises</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/educational-ai-humanoid-robotics/docs/exercises/chapter1"><span title="Chapter 1 Exercises: Introduction to Humanoid Robotics" class="linkLabel_WmDU">Chapter 1 Exercises: Introduction to Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/educational-ai-humanoid-robotics/docs/exercises/chapter2"><span title="Chapter 2 Exercises: ROS 2 for Humanoid Robotics" class="linkLabel_WmDU">Chapter 2 Exercises: ROS 2 for Humanoid Robotics</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/educational-ai-humanoid-robotics/docs/exercises/chapter3"><span title="Chapter 3 Exercises: Vision-Language Models in Robotics" class="linkLabel_WmDU">Chapter 3 Exercises: Vision-Language Models in Robotics</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/educational-ai-humanoid-robotics/docs/projects/project1"><span title="Projects" class="categoryLinkLabel_W154">Projects</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><span class="breadcrumbs__link">Exercises</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Chapter 2 Exercises: ROS 2 for Humanoid Robotics</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Chapter 2 Exercises: ROS 2 for Humanoid Robotics</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-1-ros-2-node-development-for-robot-control">Exercise 1: ROS 2 Node Development for Robot Control<a href="#exercise-1-ros-2-node-development-for-robot-control" class="hash-link" aria-label="Direct link to Exercise 1: ROS 2 Node Development for Robot Control" title="Direct link to Exercise 1: ROS 2 Node Development for Robot Control" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="objective">Objective<a href="#objective" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective" translate="no">​</a></h3>
+<p>Create a ROS 2 node that controls a humanoid robot&#x27;s walking gait by publishing joint trajectories to the appropriate topics.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructions">Instructions<a href="#instructions" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions" translate="no">​</a></h3>
+<ol>
+<li class="">Create a new ROS 2 package called <code>humanoid_walker</code></li>
+<li class="">Implement a publisher node that publishes joint trajectory messages</li>
+<li class="">Use <code>trajectory_msgs/JointTrajectory</code> to send coordinated commands to both legs</li>
+<li class="">Implement a simple walking gait pattern with alternating leg movements</li>
+<li class="">Test your node in simulation</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks">Tasks<a href="#tasks" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks" translate="no">​</a></h3>
+<ol>
+<li class="">Set up the package structure with proper dependencies</li>
+<li class="">Create the publisher node with appropriate ROS parameters</li>
+<li class="">Implement the trajectory generation algorithm</li>
+<li class="">Test with a humanoid robot simulation</li>
+<li class="">Document your implementation</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements">Requirements<a href="#requirements" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Node must publish to <code>/joint_trajectory</code> controller</li>
+<li class="">Should handle parameter changes (walking speed, step size)</li>
+<li class="">Must include safety checks to prevent dangerous joint positions</li>
+<li class="">Should be able to start/stop walking on command</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions">Questions<a href="#questions" class="hash-link" aria-label="Direct link to Questions" title="Direct link to Questions" translate="no">​</a></h3>
+<ol>
+<li class="">What are the key joints involved in humanoid walking?</li>
+<li class="">How do you ensure the robot maintains balance during walking?</li>
+<li class="">What parameters would you expose for customizing the gait?</li>
+<li class="">How would you implement obstacle avoidance in your walking controller?</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-2-sensor-integration-and-state-estimation">Exercise 2: Sensor Integration and State Estimation<a href="#exercise-2-sensor-integration-and-state-estimation" class="hash-link" aria-label="Direct link to Exercise 2: Sensor Integration and State Estimation" title="Direct link to Exercise 2: Sensor Integration and State Estimation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="objective-1">Objective<a href="#objective-1" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective" translate="no">​</a></h3>
+<p>Develop a ROS 2 node that integrates IMU and joint state sensors to estimate the robot&#x27;s center of mass and zero moment point (ZMP) for balance control.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructions-1">Instructions<a href="#instructions-1" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions" translate="no">​</a></h3>
+<ol>
+<li class="">Create a subscriber node that listens to <code>/imu/data</code> and <code>/joint_states</code> topics</li>
+<li class="">Implement algorithms to calculate center of mass position</li>
+<li class="">Compute the zero moment point based on CoM and gravity</li>
+<li class="">Publish the results to a new topic <code>/balance_state</code></li>
+<li class="">Visualize the results in RViz</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks-1">Tasks<a href="#tasks-1" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks" translate="no">​</a></h3>
+<ol>
+<li class="">Subscribe to IMU and joint state topics</li>
+<li class="">Implement center of mass calculation using robot URDF</li>
+<li class="">Compute ZMP from CoM and acceleration data</li>
+<li class="">Add filtering to smooth the estimates</li>
+<li class="">Publish balance state messages</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements-1">Requirements<a href="#requirements-1" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Subscribe to <code>sensor_msgs/Imu</code> and <code>sensor_msgs/JointState</code> topics</li>
+<li class="">Use robot_description for kinematic calculations</li>
+<li class="">Implement appropriate filtering (e.g., Kalman filter or moving average)</li>
+<li class="">Publish <code>geometry_msgs/Point</code> for CoM and ZMP positions</li>
+<li class="">Include timestamp synchronization between sensor sources</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions-1">Questions<a href="#questions-1" class="hash-link" aria-label="Direct link to Questions" title="Direct link to Questions" translate="no">​</a></h3>
+<ol>
+<li class="">Why is sensor fusion important for humanoid balance?</li>
+<li class="">How does the center of mass calculation depend on joint positions?</li>
+<li class="">What are the limitations of ZMP control for dynamic movements?</li>
+<li class="">How could you incorporate force/torque sensor data if available?</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-3-vision-based-object-detection-and-grasping">Exercise 3: Vision-Based Object Detection and Grasping<a href="#exercise-3-vision-based-object-detection-and-grasping" class="hash-link" aria-label="Direct link to Exercise 3: Vision-Based Object Detection and Grasping" title="Direct link to Exercise 3: Vision-Based Object Detection and Grasping" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="objective-2">Objective<a href="#objective-2" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective" translate="no">​</a></h3>
+<p>Create a ROS 2 node that uses camera input to detect objects and coordinates with the arm controller for grasping.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructions-2">Instructions<a href="#instructions-2" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions" translate="no">​</a></h3>
+<ol>
+<li class="">Develop a node that subscribes to camera image topics</li>
+<li class="">Implement object detection using OpenCV or a DNN</li>
+<li class="">Calculate the 3D position of detected objects using depth information</li>
+<li class="">Interface with a motion planner to generate grasp trajectories</li>
+<li class="">Test the complete pipeline in simulation</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks-2">Tasks<a href="#tasks-2" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks" translate="no">​</a></h3>
+<ol>
+<li class="">Set up image and depth image subscribers</li>
+<li class="">Implement object detection algorithm</li>
+<li class="">Convert 2D image coordinates to 3D world coordinates</li>
+<li class="">Plan and execute arm motion to grasp object</li>
+<li class="">Integrate with existing grasp planning frameworks</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements-2">Requirements<a href="#requirements-2" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Subscribe to <code>sensor_msgs/Image</code> and optionally depth topics</li>
+<li class="">Use <code>cv_bridge</code> for image processing</li>
+<li class="">Implement coordinate transformation from camera to robot base frame</li>
+<li class="">Interface with moveit_commander or similar planning framework</li>
+<li class="">Include safety checks during grasping</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions-2">Questions<a href="#questions-2" class="hash-link" aria-label="Direct link to Questions" title="Direct link to Questions" translate="no">​</a></h3>
+<ol>
+<li class="">How do you handle coordinate transformations in ROS?</li>
+<li class="">What are the challenges of 3D position estimation from 2D images?</li>
+<li class="">How would you verify that a grasp was successful?</li>
+<li class="">What are the trade-offs between different object detection approaches?</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-4-multi-node-coordination-for-complex-tasks">Exercise 4: Multi-Node Coordination for Complex Tasks<a href="#exercise-4-multi-node-coordination-for-complex-tasks" class="hash-link" aria-label="Direct link to Exercise 4: Multi-Node Coordination for Complex Tasks" title="Direct link to Exercise 4: Multi-Node Coordination for Complex Tasks" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="objective-3">Objective<a href="#objective-3" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective" translate="no">​</a></h3>
+<p>Design a system of coordinated ROS 2 nodes that work together to complete a multi-step humanoid robot task (e.g., navigate to a location, identify an object, and pick it up).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructions-3">Instructions<a href="#instructions-3" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions" translate="no">​</a></h3>
+<ol>
+<li class="">Create multiple specialized nodes:<!-- -->
+<ul>
+<li class="">Navigation node</li>
+<li class="">Perception node</li>
+<li class="">Manipulation node</li>
+<li class="">Task coordinator node</li>
+</ul>
+</li>
+<li class="">Design message interfaces between nodes</li>
+<li class="">Implement a state machine for task coordination</li>
+<li class="">Handle failure cases and recovery</li>
+<li class="">Test the complete system</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks-3">Tasks<a href="#tasks-3" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks" translate="no">​</a></h3>
+<ol>
+<li class="">Design the communication architecture between nodes</li>
+<li class="">Implement individual specialized nodes</li>
+<li class="">Create the task coordinator logic</li>
+<li class="">Add error handling and recovery mechanisms</li>
+<li class="">Test the complete task pipeline</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements-3">Requirements<a href="#requirements-3" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Each node should have a single, well-defined responsibility</li>
+<li class="">Use ROS services for synchronous communication when needed</li>
+<li class="">Use topics for continuous data streams</li>
+<li class="">Implement proper error handling and state management</li>
+<li class="">Include logging and monitoring capabilities</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions-3">Questions<a href="#questions-3" class="hash-link" aria-label="Direct link to Questions" title="Direct link to Questions" translate="no">​</a></h3>
+<ol>
+<li class="">What are the advantages of decomposing complex tasks into multiple nodes?</li>
+<li class="">How do you handle timing constraints between nodes?</li>
+<li class="">What challenges arise when coordinating multiple control systems?</li>
+<li class="">How would you extend this system to handle multiple robots?</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="exercise-5-advanced-control-with-real-time-performance">Exercise 5: Advanced Control with Real-time Performance<a href="#exercise-5-advanced-control-with-real-time-performance" class="hash-link" aria-label="Direct link to Exercise 5: Advanced Control with Real-time Performance" title="Direct link to Exercise 5: Advanced Control with Real-time Performance" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="objective-4">Objective<a href="#objective-4" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective" translate="no">​</a></h3>
+<p>Implement a ROS 2 node that provides real-time control for humanoid robot balance, meeting strict timing requirements.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructions-4">Instructions<a href="#instructions-4" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions" translate="no">​</a></h3>
+<ol>
+<li class="">Create a high-frequency control loop (200Hz+) for balance control</li>
+<li class="">Implement a controller that maintains zero moment point within support polygon</li>
+<li class="">Use real-time scheduling if possible</li>
+<li class="">Profile and optimize the performance</li>
+<li class="">Add safety mechanisms to handle control failures</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks-4">Tasks<a href="#tasks-4" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks" translate="no">​</a></h3>
+<ol>
+<li class="">Implement the high-frequency control loop</li>
+<li class="">Develop the balance control algorithm</li>
+<li class="">Optimize code for real-time performance</li>
+<li class="">Add monitoring and safety features</li>
+<li class="">Test response times and stability</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements-4">Requirements<a href="#requirements-4" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Control loop must run at specified frequency (e.g., 200Hz)</li>
+<li class="">Use real-time ROS features if available</li>
+<li class="">Implement PID or other appropriate control algorithm</li>
+<li class="">Include safety checks to prevent dangerous outputs</li>
+<li class="">Monitor and log control performance metrics</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions-4">Questions<a href="#questions-4" class="hash-link" aria-label="Direct link to Questions" title="Direct link to Questions" translate="no">​</a></h3>
+<ol>
+<li class="">What are the challenges of achieving real-time performance in ROS?</li>
+<li class="">How do you ensure control loop timing in a multitasking system?</li>
+<li class="">What are the key considerations for safety in real-time robot control?</li>
+<li class="">How would you handle communication delays in the control loop?</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="challenge-exercise-humanoid-robot-teleoperation-interface">Challenge Exercise: Humanoid Robot Teleoperation Interface<a href="#challenge-exercise-humanoid-robot-teleoperation-interface" class="hash-link" aria-label="Direct link to Challenge Exercise: Humanoid Robot Teleoperation Interface" title="Direct link to Challenge Exercise: Humanoid Robot Teleoperation Interface" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="objective-5">Objective<a href="#objective-5" class="hash-link" aria-label="Direct link to Objective" title="Direct link to Objective" translate="no">​</a></h3>
+<p>Design and implement a complete ROS 2-based system for teleoperating a humanoid robot, including haptic feedback and multiple sensory modalities.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="instructions-5">Instructions<a href="#instructions-5" class="hash-link" aria-label="Direct link to Instructions" title="Direct link to Instructions" translate="no">​</a></h3>
+<ol>
+<li class="">Develop a user input interface (joystick, keyboard, or VR)</li>
+<li class="">Create robot-side control nodes that process teleoperation commands</li>
+<li class="">Implement sensory feedback systems (visual, audio, haptic)</li>
+<li class="">Add safety features to protect the robot and environment</li>
+<li class="">Demonstrate the complete system in simulation</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tasks-5">Tasks<a href="#tasks-5" class="hash-link" aria-label="Direct link to Tasks" title="Direct link to Tasks" translate="no">​</a></h3>
+<ol>
+<li class="">Design the user interaction interface</li>
+<li class="">Implement the robot-side command processing</li>
+<li class="">Create sensory feedback mechanisms</li>
+<li class="">Add collision avoidance and safety systems</li>
+<li class="">Test and refine the complete teleoperation experience</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="advanced-requirements">Advanced Requirements<a href="#advanced-requirements" class="hash-link" aria-label="Direct link to Advanced Requirements" title="Direct link to Advanced Requirements" translate="no">​</a></h3>
+<ul>
+<li class="">Implement force feedback to the operator</li>
+<li class="">Include multiple camera views for enhanced situational awareness</li>
+<li class="">Add speech interface for commanding the robot</li>
+<li class="">Implement shared autonomy features</li>
+<li class="">Create a failsafe system for emergency stops</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="questions-5">Questions<a href="#questions-5" class="hash-link" aria-label="Direct link to Questions" title="Direct link to Questions" translate="no">​</a></h3>
+<ol>
+<li class="">How do you manage the complexity of multi-modal teleoperation interfaces?</li>
+<li class="">What are the communication and latency challenges in teleoperation?</li>
+<li class="">How do you maintain operator situational awareness in remote operation?</li>
+<li class="">What are the safety considerations for teleoperated humanoid robots?</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="solutions">Solutions<a href="#solutions" class="hash-link" aria-label="Direct link to Solutions" title="Direct link to Solutions" translate="no">​</a></h2>
+<p>Solutions for these exercises will be available after attempting the problems. Consider using the educational AI agents to help clarify concepts and verify your understanding. Each exercise builds on the fundamental concepts of ROS 2 while introducing humanoid-specific challenges and requirements.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/exercises/chapter2.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/educational-ai-humanoid-robotics/docs/exercises/chapter1"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Chapter 1 Exercises: Introduction to Humanoid Robotics</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/educational-ai-humanoid-robotics/docs/exercises/chapter3"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Chapter 3 Exercises: Vision-Language Models in Robotics</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#exercise-1-ros-2-node-development-for-robot-control" class="table-of-contents__link toc-highlight">Exercise 1: ROS 2 Node Development for Robot Control</a><ul><li><a href="#objective" class="table-of-contents__link toc-highlight">Objective</a></li><li><a href="#instructions" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#tasks" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#requirements" class="table-of-contents__link toc-highlight">Requirements</a></li><li><a href="#questions" class="table-of-contents__link toc-highlight">Questions</a></li></ul></li><li><a href="#exercise-2-sensor-integration-and-state-estimation" class="table-of-contents__link toc-highlight">Exercise 2: Sensor Integration and State Estimation</a><ul><li><a href="#objective-1" class="table-of-contents__link toc-highlight">Objective</a></li><li><a href="#instructions-1" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#tasks-1" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#requirements-1" class="table-of-contents__link toc-highlight">Requirements</a></li><li><a href="#questions-1" class="table-of-contents__link toc-highlight">Questions</a></li></ul></li><li><a href="#exercise-3-vision-based-object-detection-and-grasping" class="table-of-contents__link toc-highlight">Exercise 3: Vision-Based Object Detection and Grasping</a><ul><li><a href="#objective-2" class="table-of-contents__link toc-highlight">Objective</a></li><li><a href="#instructions-2" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#tasks-2" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#requirements-2" class="table-of-contents__link toc-highlight">Requirements</a></li><li><a href="#questions-2" class="table-of-contents__link toc-highlight">Questions</a></li></ul></li><li><a href="#exercise-4-multi-node-coordination-for-complex-tasks" class="table-of-contents__link toc-highlight">Exercise 4: Multi-Node Coordination for Complex Tasks</a><ul><li><a href="#objective-3" class="table-of-contents__link toc-highlight">Objective</a></li><li><a href="#instructions-3" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#tasks-3" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#requirements-3" class="table-of-contents__link toc-highlight">Requirements</a></li><li><a href="#questions-3" class="table-of-contents__link toc-highlight">Questions</a></li></ul></li><li><a href="#exercise-5-advanced-control-with-real-time-performance" class="table-of-contents__link toc-highlight">Exercise 5: Advanced Control with Real-time Performance</a><ul><li><a href="#objective-4" class="table-of-contents__link toc-highlight">Objective</a></li><li><a href="#instructions-4" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#tasks-4" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#requirements-4" class="table-of-contents__link toc-highlight">Requirements</a></li><li><a href="#questions-4" class="table-of-contents__link toc-highlight">Questions</a></li></ul></li><li><a href="#challenge-exercise-humanoid-robot-teleoperation-interface" class="table-of-contents__link toc-highlight">Challenge Exercise: Humanoid Robot Teleoperation Interface</a><ul><li><a href="#objective-5" class="table-of-contents__link toc-highlight">Objective</a></li><li><a href="#instructions-5" class="table-of-contents__link toc-highlight">Instructions</a></li><li><a href="#tasks-5" class="table-of-contents__link toc-highlight">Tasks</a></li><li><a href="#advanced-requirements" class="table-of-contents__link toc-highlight">Advanced Requirements</a></li><li><a href="#questions-5" class="table-of-contents__link toc-highlight">Questions</a></li></ul></li><li><a href="#solutions" class="table-of-contents__link toc-highlight">Solutions</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Textbook</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/educational-ai-humanoid-robotics/docs/intro">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/educational-ai-humanoid-robotics/docs/ros/fundamentals">ROS 2 Fundamentals</a></li><li class="footer__item"><a class="footer__link-item" href="/educational-ai-humanoid-robotics/docs/vlm/introduction">Vision-Language Models</a></li><li class="footer__item"><a class="footer__link-item" href="/educational-ai-humanoid-robotics/docs/simulation/gazebo">Simulation Environments</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/robotics" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/robotics" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/robotics_edu" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Educational AI & Humanoid Robotics. Built with Docusaurus.</div></div></div></footer><div class="chatbotToggleButton_FHwJ"><div class="icon_V1Jo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4.913 2.658c2.075-1.932 5.419-1.932 7.494 0 2.075 1.933 2.075 5.072 0 7.005-2.075 1.933-5.419 1.933-7.494 0-2.075-1.932-2.075-5.072 0-7.005zm8.41 1.271a3.02 3.02 0 0 1 4.218 0 3.02 3.02 0 0 1 0 4.274 3.02 3.02 0 0 1-4.218 0 3.02 3.02 0 0 1 0-4.274zM16.771 8.572l3.236-3.153 1.428 1.46-3.236 3.153-1.428-1.46z"></path><path d="M4.97 12.292c-.39-.389-.39-.986 0-1.374.39-.389 1.02-.389 1.41 0l5.282 5.216c.39.389.39.986 0 1.374-.39.389-1.02.389-1.41 0l-5.282-5.216zm0 4.274c-.39.389-1.02.389-1.41 0-.39-.389-.39-.986 0-1.374l5.282-5.216c.39-.389 1.02-.389 1.41 0 .39.389.39.986 0 1.374l-5.282 5.216z"></path></svg></div></div></div>
+</body>
+</html>

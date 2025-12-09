@@ -1,0 +1,27 @@
+{
+  "id": "vlm/embedding-techniques",
+  "title": "Embedding Techniques for Robotics Applications",
+  "description": "Overview",
+  "source": "@site/docs/vlm/embedding-techniques.md",
+  "sourceDirName": "vlm",
+  "slug": "/vlm/embedding-techniques",
+  "permalink": "/docs/vlm/embedding-techniques",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/vlm/embedding-techniques.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Vision-Language Model Architectures for Robotics",
+    "permalink": "/docs/vlm/vla-architectures"
+  },
+  "next": {
+    "title": "Planning with Vision-Language Models in Robotics",
+    "permalink": "/docs/vlm/planning-with-vlm"
+  }
+}
