@@ -1,0 +1,7 @@
+# ignore local environment variables
+.env
+.env.local
+.env.*.local
+
+# recommended to ignore node_modules if not already ignored
+node_modules/
