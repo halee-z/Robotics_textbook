@@ -1,0 +1,27 @@
+{
+  "id": "interactive-tools/personalization-agent",
+  "title": "Personalization Agent",
+  "description": "The Personalization Agent is an AI-powered tool that customizes textbook content to match each learner's individual needs, preferences, and goals.",
+  "source": "@site/docs/interactive-tools/personalization-agent.md",
+  "sourceDirName": "interactive-tools",
+  "slug": "/interactive-tools/personalization-agent",
+  "permalink": "/docs/interactive-tools/personalization-agent",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/interactive-tools/personalization-agent.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Quiz Agent Demo",
+    "permalink": "/docs/interactive-tools/quiz-agent-demo"
+  },
+  "next": {
+    "title": "Personalization Agent Demo",
+    "permalink": "/docs/interactive-tools/personalization-agent-demo"
+  }
+}

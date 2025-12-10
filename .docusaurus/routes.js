@@ -38,16 +38,21 @@ export default [
     exact: true
   },
   {
+    path: '/interactive-tools/quiz',
+    component: ComponentCreator('/interactive-tools/quiz', '6b5'),
+    exact: true
+  },
+  {
     path: '/docs',
-    component: ComponentCreator('/docs', '1da'),
+    component: ComponentCreator('/docs', 'bdc'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'a56'),
+        component: ComponentCreator('/docs', '49e'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '7b5'),
+            component: ComponentCreator('/docs', '8b4'),
             routes: [
               {
                 path: '/docs/api/overview',
@@ -99,6 +104,30 @@ export default [
               {
                 path: '/docs/humanoid-robotics/walking-algorithms',
                 component: ComponentCreator('/docs/humanoid-robotics/walking-algorithms', '044'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/interactive-tools/personalization-agent',
+                component: ComponentCreator('/docs/interactive-tools/personalization-agent', '57a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/interactive-tools/personalization-agent-demo',
+                component: ComponentCreator('/docs/interactive-tools/personalization-agent-demo', '22e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/interactive-tools/quiz-agent',
+                component: ComponentCreator('/docs/interactive-tools/quiz-agent', 'd4d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/interactive-tools/quiz-agent-demo',
+                component: ComponentCreator('/docs/interactive-tools/quiz-agent-demo', '5a6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

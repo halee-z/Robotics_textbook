@@ -282,6 +282,160 @@ Error responses follow the format:
 }
 ```
 
+### Quiz Agent
+
+#### `POST /quiz/start`
+Initialize a new quiz session.
+
+**Request Body:**
+```json
+{
+  "difficulty": "beginner|normal|high",
+  "topic": "Optional specific topic from the textbook"
+}
+```
+
+**Response:**
+```json
+{
+  "session_id": "Quiz session identifier",
+  "total_questions": 5,
+  "current_question": {
+    "id": "Question ID",
+    "question": "Question text",
+    "type": "MCQ|TF|short",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "topic": "Topic area"
+  }
+}
+```
+
+#### `POST /quiz/submit_answer`
+Submit an answer for the current question.
+
+**Request Body:**
+```json
+{
+  "session_id": "Quiz session identifier",
+  "question_id": "ID of the question being answered",
+  "answer": "User's answer - text for short answers, option index for MCQ, boolean for TF"
+}
+```
+
+**Response:**
+```json
+{
+  "is_correct": true,
+  "explanation": "Explanation of the correct answer",
+  "next_question": {
+    "id": "Next question ID",
+    "question": "Next question text",
+    "type": "MCQ|TF|short",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "topic": "Topic area"
+  },
+  "score": 3,
+  "total_questions": 5
+}
+```
+
+#### `GET /quiz/results/{session_id}`
+Get the final results for a quiz session.
+
+**Response:**
+```json
+{
+  "session_id": "Quiz session identifier",
+  "score": 4,
+  "total_questions": 5,
+  "percentage": 80,
+  "difficulty": "high",
+  "answers": [
+    {
+      "question_id": "Question ID",
+      "question": "Question text",
+      "user_answer": "User's answer",
+      "correct_answer": "Correct answer",
+      "is_correct": true,
+      "explanation": "Explanation"
+    }
+  ]
+}
+```
+
+### Personalization Agent
+
+#### `POST /personalization/personalize`
+Personalize content based on user preferences.
+
+**Request Body:**
+```json
+{
+  "content": "Original chapter content",
+  "preferences": {
+    "level": "beginner|intermediate|advanced",
+    "interests": ["interest1", "interest2"],
+    "goals": ["goal1", "goal2"],
+    "learning_style": "comprehensive|concise|example-focused"
+  },
+  "chapter_title": "Optional chapter title for context"
+}
+```
+
+**Response:**
+```json
+{
+  "personalized_content": "Adjusted content based on user preferences",
+  "metadata": {
+    "processing_time": 0.5,
+    "adjustments_made": ["simplified_language", "added_examples"],
+    "confidence": 0.8
+  }
+}
+```
+
+#### `GET /users/{user_id}/profile`
+Get a user's profile and preferences.
+
+**Response:**
+```json
+{
+  "user_id": "User identifier",
+  "preferences": {
+    "level": "intermediate",
+    "interests": ["ROS 2 Development", "Humanoid Locomotion"],
+    "goals": ["Build Applications"],
+    "learning_style": "example-focused"
+  },
+  "learning_history": {
+    "completed_chapters": ["ROS Fundamentals", "VLM Introduction"],
+    "quiz_scores": [85, 92, 78],
+    "time_spent": 3600
+  }
+}
+```
+
+#### `PUT /users/{user_id}/preferences`
+Update a user's preferences.
+
+**Request Body:**
+```json
+{
+  "level": "advanced",
+  "interests": ["ROS 2 Development", "Humanoid Locomotion", "Simulation Environments"],
+  "goals": ["Build Applications", "Conduct Research"],
+  "learning_style": "comprehensive"
+}
+```
+
+**Response:**
+```json
+{
+  "status": "success",
+  "message": "Preferences updated successfully"
+}
+```
+
 ## Rate Limiting
 
 All endpoints are subject to rate limiting to prevent abuse. Current limits are 100 requests per minute per IP address, with burst capacity of 20 requests.

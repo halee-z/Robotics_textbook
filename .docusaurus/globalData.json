@@ -55,6 +55,26 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "interactive-tools/personalization-agent",
+              "path": "/docs/interactive-tools/personalization-agent",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "interactive-tools/personalization-agent-demo",
+              "path": "/docs/interactive-tools/personalization-agent-demo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "interactive-tools/quiz-agent",
+              "path": "/docs/interactive-tools/quiz-agent",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "interactive-tools/quiz-agent-demo",
+              "path": "/docs/interactive-tools/quiz-agent-demo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"

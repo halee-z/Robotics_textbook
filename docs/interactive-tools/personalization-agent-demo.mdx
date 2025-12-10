@@ -1,0 +1,23 @@
+---
+title: Personalization Agent Demo
+---
+
+import PersonalizationAgent from '@site/src/components/personalization-agent/PersonalizationAgent';
+import React, { useState } from 'react';
+
+# Personalization Agent Demo
+
+This is a demonstration of the Personalization Agent that customizes content based on your preferences.
+
+<PersonalizationAgent 
+  chapterContent="This is a sample chapter about ROS 2 fundamentals. ROS 2 (Robot Operating System 2) is a flexible framework for writing robot software. It's a collection of tools, libraries, and conventions that aim to support the building of complex and robust robot behavior across a wide variety of robot platforms. ROS 2 addresses the limitations of ROS 1, such as security, real-time support, and multi-robot systems. Key concepts include nodes, topics, services, actions, and parameters. The architecture is built on DDS (Data Distribution Service) which provides the underlying communication layer."
+  onContentUpdate={(newContent) => {
+    document.getElementById('personalized-content').innerHTML = newContent;
+  }}
+  chapterTitle="ROS 2 Fundamentals"
+/>
+
+<div id="personalized-content">
+  <h3>Personalized Content Preview</h3>
+  <p>The content above will be personalized based on your preferences when you use the Personalization Agent.</p>
+</div>

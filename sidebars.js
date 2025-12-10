@@ -61,6 +61,16 @@ const sidebars = {
         'projects/project2',
         'projects/project3'
       ],
+    },
+    {
+      type: 'category',
+      label: 'Interactive Learning Tools',
+      items: [
+        'interactive-tools/quiz-agent',
+        'interactive-tools/quiz-agent-demo',
+        'interactive-tools/personalization-agent',
+        'interactive-tools/personalization-agent-demo'
+      ],
     }
   ],
 };

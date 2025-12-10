@@ -19,5 +19,9 @@
   "previous": {
     "title": "Getting Started with Projects",
     "permalink": "/docs/projects/project2"
+  },
+  "next": {
+    "title": "Interactive Quiz Agent",
+    "permalink": "/docs/interactive-tools/quiz-agent"
   }
 }

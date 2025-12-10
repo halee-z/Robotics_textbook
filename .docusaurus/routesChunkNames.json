@@ -42,17 +42,24 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/docs-1da": {
+  "/interactive-tools/quiz-6b5": {
+    "__comp": "__comp---site-src-pages-interactive-tools-quiz-jsf-69-69e",
+    "__context": {
+      "plugin": "plugin---interactive-tools-quiza-74-5f4"
+    },
+    "config": "config---interactive-tools-quiz-5-e-9-459"
+  },
+  "/docs-bdc": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-a56": {
+  "/docs-49e": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-7b5": {
+  "/docs-8b4": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/api/overview-5d7": {
@@ -90,6 +97,22 @@
   "/docs/humanoid-robotics/walking-algorithms-044": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-humanoid-robotics-walking-algorithmsa-81-c3b"
+  },
+  "/docs/interactive-tools/personalization-agent-57a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-interactive-tools-personalization-agentb-2-f-f6d"
+  },
+  "/docs/interactive-tools/personalization-agent-demo-22e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-interactive-tools-personalization-agent-demo-3-cd-b19"
+  },
+  "/docs/interactive-tools/quiz-agent-d4d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-interactive-tools-quiz-agent-6-da-a39"
+  },
+  "/docs/interactive-tools/quiz-agent-demo-5a6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-interactive-tools-quiz-agent-demo-6-d-0-85e"
   },
   "/docs/intro-61d": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -158,14 +181,14 @@
   "/-2e1": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "plugin---a-74-9d6"
+      "plugin": "plugin---interactive-tools-quiza-74-5f4"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "config---interactive-tools-quiz-5-e-9-459"
   },
   "/-2bc": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---a-74-9d6"
+      "plugin": "plugin---interactive-tools-quiza-74-5f4"
     },
     "content": "content---f-39-267"
   }

@@ -1,0 +1,26 @@
+{
+  "id": "interactive-tools/quiz-agent-demo",
+  "title": "Quiz Agent Demo",
+  "description": "Experience our AI-powered Quiz Agent firsthand. This interactive tool will help reinforce your learning with personalized quizzes on AI and humanoid robotics topics.",
+  "source": "@site/docs/interactive-tools/quiz-agent-demo.mdx",
+  "sourceDirName": "interactive-tools",
+  "slug": "/interactive-tools/quiz-agent-demo",
+  "permalink": "/docs/interactive-tools/quiz-agent-demo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/docs/interactive-tools/quiz-agent-demo.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Quiz Agent Demo"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Interactive Quiz Agent",
+    "permalink": "/docs/interactive-tools/quiz-agent"
+  },
+  "next": {
+    "title": "Personalization Agent",
+    "permalink": "/docs/interactive-tools/personalization-agent"
+  }
+}

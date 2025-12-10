@@ -1,0 +1,244 @@
+.quizContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: var(--ifm-font-family-base);
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.setupSection {
+  text-align: center;
+}
+
+.difficultyExplanation {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.difficultyExplanation p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.selectInput {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid var(--ifm-color-border);
+  border-radius: 4px;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+}
+
+.startButton {
+  padding: 12px 24px;
+  background-color: #25c2a0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.startButton:hover:not(.disabledButton) {
+  background-color: #21af90;
+}
+
+.disabledButton {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.questionSection {
+  padding: 20px 0;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.questionCounter {
+  font-weight: bold;
+}
+
+.scoreDisplay {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.questionText {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.optionsContainer {
+  margin-bottom: 20px;
+}
+
+.option {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid var(--ifm-color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  border-color: var(--ifm-color-primary);
+  background-color: rgba(37, 194, 160, 0.05);
+}
+
+.selectedOption {
+  border-color: var(--ifm-color-primary);
+  background-color: rgba(37, 194, 160, 0.1);
+}
+
+.optionLetter {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.shortAnswerContainer {
+  margin-bottom: 20px;
+}
+
+.shortAnswerInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--ifm-color-border);
+  border-radius: 4px;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+  font-family: var(--ifm-font-family-base);
+}
+
+.shortAnswerInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.submitButton {
+  padding: 12px 24px;
+  background-color: #3578e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #2c68c8;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.feedbackSection {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.feedbackVisible {
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #f0f8ff;
+  border-left: 4px solid #3578e5;
+  border-radius: 4px;
+}
+
+.feedbackHidden {
+  display: none;
+}
+
+.continueButton {
+  padding: 12px 24px;
+  background-color: #25c2a0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.continueButton:hover {
+  background-color: #21af90;
+}
+
+.resultsSection {
+  text-align: center;
+}
+
+.finalScore {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.percentageScore {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.answersReview {
+  text-align: left;
+  margin: 30px 0;
+}
+
+.answerItem {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.correctAnswer {
+  border: 1px solid #4caf50;
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+.incorrectAnswer {
+  border: 1px solid #f44336;
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+.restartButton {
+  padding: 12px 24px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.restartButton:hover {
+  background-color: #e55a50;
+}

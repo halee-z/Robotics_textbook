@@ -72,6 +72,8 @@ By the end of this course, students will be able to:
 This textbook is integrated with an interactive learning platform that includes:
 
 - **Educational AI Agents**: Specialized assistants for different robotics domains
+- **Interactive Quiz Agent**: AI-powered quizzes based on textbook content to test your knowledge and reinforce learning
+- **Personalization Agent**: Customizes textbook content to match your individual learning preferences and goals
 - **Simulation Integration**: Direct access to simulation environments
 - **Robot Control Interface**: Real-time robot monitoring and control
 - **Exercises and Projects**: Hands-on learning experiences
