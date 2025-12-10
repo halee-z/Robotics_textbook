@@ -2,7 +2,6 @@
   "github": {
     "silent": true
   },
-  "framework": "none",
   "builds": [
     {
       "src": "package.json",
@@ -17,5 +16,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "installCommand": "npm install",
+  "buildCommand": "node direct-build.js",
+  "outputDirectory": "build"
 }
