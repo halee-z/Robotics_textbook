@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "backend:start": "cd backend && python start_server.py"
+    "backend:start": "cd backend && python start_server.py",
+    "postinstall": "chmod +x node_modules/.bin/docusaurus || echo 'chmod not needed on this platform'"
   },
   "dependencies": {
     "@docusaurus/core": "^3.1.0",
