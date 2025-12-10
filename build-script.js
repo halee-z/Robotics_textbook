@@ -1,14 +1,23 @@
-const { spawn } = require('child_process');
+const { spawn, execSync } = require('child_process');
 const fs = require('fs');
+const path = require('path');
 
 // Ensure the docusaurus binary has execution permissions
 function setBinaryPermissions() {
   try {
     const docusaurusPath = './node_modules/.bin/docusaurus';
+
     if (fs.existsSync(docusaurusPath)) {
-      // Try to set permissions using chmod (works on Linux/Mac) or fs.chmod on all platforms
-      fs.chmodSync(docusaurusPath, 0o755); // Use octal notation for permissions
-      console.log('Set execution permissions for docusaurus binary');
+      // Try to set permissions using chmod command (works in Linux/Unix systems)
+      try {
+        execSync(`chmod +x "${path.resolve(docusaurusPath)}"`);
+        console.log('Set execution permissions for docusaurus binary using chmod');
+      } catch (chmodError) {
+        console.log('Chmod failed, trying fs.chmod:', chmodError.message);
+        // Fallback to fs.chmod
+        fs.chmodSync(docusaurusPath, 0o755);
+        console.log('Set execution permissions using fs.chmod');
+      }
     } else {
       console.log('Docusaurus binary not found at default location');
     }
@@ -27,7 +36,8 @@ function runBuild() {
   // Execute using npx to ensure proper module resolution in Vercel environment
   const buildProcess = spawn('npx', ['docusaurus', 'build'], {
     stdio: 'inherit',
-    env: { ...process.env } // Pass through environment variables
+    env: { ...process.env,  // Pass through environment variables
+           SKIP_PREFLIGHT_CHECK: 'true' } // Skip preflight checks that might cause issues
   });
 
   buildProcess.on('close', (code) => {
