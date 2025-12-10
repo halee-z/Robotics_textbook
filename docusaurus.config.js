@@ -8,15 +8,15 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 const config = {
   title: 'Educational AI & Humanoid Robotics',
   tagline: 'AI-Native Textbook for Advanced Robotics Education',
-  url: 'http://localhost:3000',
+  url: 'https://robotics-textbook-git-main-halee-z.vercel.app', // Change this to your actual deployment URL
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
-  organizationName: 'educational-ai-humanoid-robotics', // Usually your GitHub org/user name.
-  projectName: 'educational-ai-humanoid-robotics.github.io', // Usually your repo name.
+  organizationName: 'halee-z', // Usually your GitHub org/user name.
+  projectName: 'Robotics_textbook', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,7 +36,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/halee-z/Robotics_textbook/tree/main/',
         },
         blog: false,
         theme: {
@@ -64,7 +64,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io',
+            href: 'https://github.com/halee-z/Robotics_textbook',
             label: 'GitHub',
             position: 'right',
           },
@@ -116,7 +116,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/educational-ai-humanoid-robotics/educational-ai-humanoid-robotics.github.io',
+                href: 'https://github.com/halee-z/Robotics_textbook',
               },
             ],
           },
